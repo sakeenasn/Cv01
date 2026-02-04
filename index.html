@@ -1,1 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CV – Sakeena Syed Naqvi</title>
 
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic" rel="stylesheet">
+
+  <!-- CSS intégré -->
+  <style>
+    /* ------------------------
+       BASE STYLES
+    ------------------------ */
+    body {
+      font-family: 'Poppins', 'Lato', sans-serif;
+      background-color: #faf9fc;
+      color: #3b2f4a;
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: #7b5fbf;
+    }
+
+    h1, h2, h3 {
+      font-weight: 400;
+      color: #3a2e50;
+    }
+
+    p {
+      line-height: 1.7em;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+
+    /* ------------------------
+       LAYOUT
+    ------------------------ */
+    #main_container {
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+      background: #ffffff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.08);
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    /* ------------------------
+       HEADER
+    ------------------------ */
+    #header {
+      width: 100%;
+      background-color: #b49ddf;
+      color: white;
+      padding: 30px 40px;
+      box-sizing: border-box;
+    }
+
+    .header_logotype_container {
+      float: left;
+    }
+
+    .logotype_name {
+      margin: 0;
+      font-size: 2.2em;
+    }
+
+    .purple {
+      color: #f1e6ff;
+    }
+
+    .logotype_occupation {
+      margin-top: 5px;
+      font-size: 1.1em;
+      color: #f8f4ff;
+    }
+
+    .header_menu_container {
+      float: right;
+    }
+
+    .header_menu li {
+      display: inline-block;
+      margin-left: 20px;
+    }
+
+    .header_menu a {
+      color: #fff;
+      border-right: 1px solid rgba(255,255,255,0.5);
+      padding-right: 10px;
+    }
+
+    .header_menu a.no_border {
+      border: none;
+    }
+
+    /* ------------------------
+       LEFT COLUMN
+    ------------------------ */
+    #left_col {
+      width: 30%;
+      background-color: #f4f0fa;
+      padding: 30px;
+      box-sizing: border-box;
+      color: #1f1633;
+    }
+
+    .profile_frame {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .profile_picture {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #d7c6f3;
+    }
+
+    #left_col h2 {
+      color: #7b5fbf;
+      margin-top: 25px;
+      font-weight: 600;
+    }
+
+    /* ------------------------
+       MAIN CONTENT
+    ------------------------ */
+    #content_container {
+      width: 70%;
+      padding: 40px;
+      box-sizing: border-box;
+    }
+
+    .block {
+      margin-bottom: 40px;
+    }
+
+    .horizontal_line {
+      display: flex;
+      align-items: center;
+      margin: 30px 0;
+    }
+
+    .line_left, .line_right {
+      height: 2px;
+      background-color: #e2daf5;
+      flex-grow: 1;
+    }
+
+    .central_circle {
+      width: 10px;
+      height: 10px;
+      background-color: #8a6fcf;
+      border-radius: 50%;
+      margin: 0 10px;
+    }
+
+    /* ------------------------
+       FOOTER
+    ------------------------ */
+    #footer {
+      width: 100%;
+      background-color: #b49ddf;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 0.9em;
+    }
+
+    /* ------------------------
+       RESPONSIVE
+    ------------------------ */
+    @media (max-width: 900px) {
+      #left_col, #content_container {
+        width: 100%;
+      }
+      #main_container {
+        flex-direction: column;
+      }
+      #header {
+        text-align: center;
+      }
+      .header_menu_container {
+        float: none;
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div id="main_container">
+
+  <!-- HEADER -->
+  <div id="header">
+    <div class="header_logotype_container">
+      <h1 class="logotype_name">Sakeena <span class="purple">Syed Naqvi</span></h1>
+      <h2 class="logotype_occupation">Digital Communication & Event Project Assistant</h2>
+    </div>
+
+    <div class="header_menu_container">
+      <ul class="header_menu">
+        <li><a class="no_border" href="#">Profile</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#interest">Interests</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- LEFT COLUMN -->
+  <div id="left_col">
+    <div class="profile_frame">
+      <img src="photo.jpg" alt="Profile picture" class="profile_picture">
+    </div>
+
+    <h2>Hello!</h2>
+    <p>
+      I am a motivated student in Digital Humanities with a strong interest in
+      communication, digital projects, and event management.
+    </p>
+
+    <h2>Contact</h2>
+    <p>📞 +33 6 68 46 45 77</p>
+    <p>✉️ syedsakeena.2001@gmail.com</p>
+    <p>📍 Paris, France</p>
+
+    <h2 id="education">Education</h2>
+    <p><strong>Master Digital Humanities</strong><br>Université Paris 8</p>
+
+    <h2 id="interest">Interests</h2>
+    <ul>
+      <li>Photography</li>
+      <li>Travel</li>
+      <li>Volunteering</li>
+    </ul>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div id="content_container">
+    <div class="block" id="experience">
+      <h1>Professional Experience</h1>
+      <h2>Event Project Assistant</h2>
+      <p>J.D.M | 2024</p>
+    </div>
+
+    <div class="horizontal_line">
+      <div class="line_left"></div>
+      <div class="central_circle"></div>
+      <div class="line_right"></div>
+    </div>
+
+    <div class="block" id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Event organization</li>
+        <li>Social media</li>
+        <li>Communication</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div id="footer">
+    <p>Sakeena Syed Naqvi – CV 2025</p>
+  </div>
+
+</div>
+
+</body>
+</html>
