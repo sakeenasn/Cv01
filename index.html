@@ -5,206 +5,264 @@
   <title>CV – Sakeena Syed Naqvi</title>
 
   <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic" rel="stylesheet" type="text/css">
 
-  <!-- CSS intégré -->
   <style>
-    /* ------------------------
-       BASE STYLES
-    ------------------------ */
-    body {
-      font-family: 'Poppins', 'Lato', sans-serif;
-      background-color: #faf9fc;
-      color: #3b2f4a;
-      margin: 0;
-      padding: 0;
-    }
+/* ------------------------
+   BASE STYLES
+------------------------ */
+body {
+  font-family: 'Poppins', 'Lato', sans-serif;
+  background-color: #faf9fc;
+  color: #3b2f4a;
+  margin: 0;
+  padding: 0;
+}
 
-    a {
-      text-decoration: none;
-      color: #7b5fbf;
-    }
+a {
+  text-decoration: none;
+  color: #7b5fbf;
+}
 
-    h1, h2, h3 {
-      font-weight: 400;
-      color: #3a2e50;
-    }
+h1, h2, h3 {
+  font-weight: 400;
+  color: #3a2e50;
+}
 
-    p {
-      line-height: 1.7em;
-      margin-bottom: 10px;
-    }
+p {
+  line-height: 1.7em;
+  margin-bottom: 10px;
+}
 
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
+ul {
+  list-style: none;
+  padding-left: 0;
+}
 
-    li {
-      margin-bottom: 5px;
-    }
+li {
+  margin-bottom: 5px;
+}
 
-    /* ------------------------
-       LAYOUT
-    ------------------------ */
-    #main_container {
-      width: 100%;
-      max-width: 1100px;
-      margin: 0 auto;
-      background: #ffffff;
-      box-shadow: 0 0 10px rgba(0,0,0,0.08);
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
+/* ------------------------
+   LAYOUT
+------------------------ */
+#main_container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #ffffff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
-    /* ------------------------
-       HEADER
-    ------------------------ */
-    #header {
-      width: 100%;
-      background-color: #b49ddf;
-      color: white;
-      padding: 30px 40px;
-      box-sizing: border-box;
-    }
+/* ------------------------
+   HEADER
+------------------------ */
+#header {
+  width: 100%;
+  background-color: #b49ddf;
+  color: white;
+  padding: 30px 40px;
+  box-sizing: border-box;
+}
 
-    .header_logotype_container {
-      float: left;
-    }
+.header_logotype_container {
+  float: left;
+}
 
-    .logotype_name {
-      margin: 0;
-      font-size: 2.2em;
-    }
+.logotype_name {
+  margin: 0;
+  font-size: 2.2em;
+  letter-spacing: 0.5px;
+}
 
-    .purple {
-      color: #f1e6ff;
-    }
+.purple {
+  color: #f1e6ff;
+}
 
-    .logotype_occupation {
-      margin-top: 5px;
-      font-size: 1.1em;
-      color: #f8f4ff;
-    }
+.logotype_occupation {
+  margin-top: 5px;
+  font-size: 1.1em;
+  letter-spacing: 0.6px;
+  color: #f8f4ff;
+}
 
-    .header_menu_container {
-      float: right;
-    }
+.header_menu_container {
+  float: right;
+}
 
-    .header_menu li {
-      display: inline-block;
-      margin-left: 20px;
-    }
+.header_menu {
+  margin-top: 10px;
+}
 
-    .header_menu a {
-      color: #fff;
-      border-right: 1px solid rgba(255,255,255,0.5);
-      padding-right: 10px;
-    }
+.header_menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
 
-    .header_menu a.no_border {
-      border: none;
-    }
+.header_menu a {
+  color: #fff;
+  font-size: 0.95em;
+  border-right: 1px solid rgba(255,255,255,0.5);
+  padding-right: 10px;
+}
 
-    /* ------------------------
-       LEFT COLUMN
-    ------------------------ */
-    #left_col {
-      width: 30%;
-      background-color: #f4f0fa;
-      padding: 30px;
-      box-sizing: border-box;
-      color: #1f1633;
-    }
+.header_menu a.no_border {
+  border: none;
+}
 
-    .profile_frame {
-      text-align: center;
-      margin-bottom: 25px;
-    }
+/* ------------------------
+   LEFT COLUMN
+------------------------ */
+#left_col {
+  width: 30%;
+  background-color: #f4f0fa;
+  padding: 30px;
+  box-sizing: border-box;
+  color: #2e1f47;
+}
 
-    .profile_picture {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid #d7c6f3;
-    }
+.profile_frame {
+  text-align: center;
+  margin-bottom: 25px;
+}
 
-    #left_col h2 {
-      color: #7b5fbf;
-      margin-top: 25px;
-      font-weight: 600;
-    }
+.profile_picture {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  background: #ddd url('images/profile.jpg') center/cover;
+  margin: 0 auto;
+  border: 3px solid #d7c6f3;
+}
 
-    /* ------------------------
-       MAIN CONTENT
-    ------------------------ */
-    #content_container {
-      width: 70%;
-      padding: 40px;
-      box-sizing: border-box;
-    }
+.hello_content h2,
+.contact_details_content h2,
+.get_social_content h2 {
+  color: #7b5fbf;
+  margin-top: 25px;
+  font-weight: 600;
+}
 
-    .block {
-      margin-bottom: 40px;
-    }
+.contact_details_content p,
+.contact_details_content a,
+.get_social_content a,
+.get_social_content li {
+  color: #2e1f47 !important;
+  font-weight: 500;
+  font-size: 0.95em;
+}
 
-    .horizontal_line {
-      display: flex;
-      align-items: center;
-      margin: 30px 0;
-    }
+.contact_details_content a:hover,
+.get_social_content a:hover {
+  color: #9a73c7;
+  text-decoration: underline;
+}
 
-    .line_left, .line_right {
-      height: 2px;
-      background-color: #e2daf5;
-      flex-grow: 1;
-    }
+/* ------------------------
+   MAIN CONTENT
+------------------------ */
+#content_container {
+  width: 70%;
+  padding: 40px;
+  box-sizing: border-box;
+}
 
-    .central_circle {
-      width: 10px;
-      height: 10px;
-      background-color: #8a6fcf;
-      border-radius: 50%;
-      margin: 0 10px;
-    }
+.block {
+  margin-bottom: 40px;
+}
 
-    /* ------------------------
-       FOOTER
-    ------------------------ */
-    #footer {
-      width: 100%;
-      background-color: #b49ddf;
-      color: white;
-      text-align: center;
-      padding: 15px 0;
-      font-size: 0.9em;
-    }
+.block h1,
+.block h2 {
+  color: #7b5fbf;
+  font-weight: 500;
+}
 
-    /* ------------------------
-       RESPONSIVE
-    ------------------------ */
-    @media (max-width: 900px) {
-      #left_col, #content_container {
-        width: 100%;
-      }
-      #main_container {
-        flex-direction: column;
-      }
-      #header {
-        text-align: center;
-      }
-      .header_menu_container {
-        float: none;
-        margin-top: 20px;
-      }
-    }
+.horizontal_line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.line_left,
+.line_right {
+  height: 2px;
+  background-color: #e2daf5;
+  flex-grow: 1;
+}
+
+.central_circle {
+  width: 10px;
+  height: 10px;
+  background-color: #8a6fcf;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+/* ------------------------
+   FOOTER
+------------------------ */
+#footer {
+  width: 100%;
+  background-color: #b49ddf;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9em;
+}
+
+/* ------------------------
+   RESPONSIVE DESIGN
+------------------------ */
+@media (max-width: 900px) {
+  #left_col,
+  #content_container {
+    width: 100%;
+  }
+
+  #main_container {
+    flex-direction: column;
+  }
+
+  #header {
+    text-align: center;
+  }
+
+  .header_menu_container {
+    float: none;
+    margin-top: 20px;
+  }
+}
+
+/* ------------------------
+   FIX VISIBILITÉ TEXTE GAUCHE
+------------------------ */
+#left_col,
+#left_col * {
+  color: #1f1633 !important;
+}
+
+#left_col a {
+  color: #3a1c77 !important;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#left_col a:hover {
+  color: #7b5fbf !important;
+  text-decoration: underline;
+}
   </style>
 </head>
 
 <body>
 
+<!-- MAIN CONTAINER -->
 <div id="main_container">
 
   <!-- HEADER -->
@@ -215,8 +273,13 @@
     </div>
 
     <div class="header_menu_container">
-      <ul class="header_menu">
-        <li><a class="no_border" href="#">Profile</a></li>
+      <ul class="download_print_buttons horizontal_list">
+        <li><a href="#">Download CV</a></li>
+        <li><a href="#">Print CV</a></li>
+      </ul>
+
+      <ul class="header_menu horizontal_list">
+        <li><a class="no_border purple" href="#">Profile</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#experience">Experience</a></li>
@@ -227,38 +290,99 @@
 
   <!-- LEFT COLUMN -->
   <div id="left_col">
+
     <div class="profile_frame">
       <img src="photo.jpg" alt="Profile picture" class="profile_picture">
     </div>
 
-    <h2>Hello!</h2>
-    <p>
-      I am a motivated student in Digital Humanities with a strong interest in
-      communication, digital projects, and event management.
-    </p>
+    <div class="hello_content">
+      <h2>Hello!</h2>
+      <p>
+        I am a motivated student in Digital Humanities with a strong interest in communication,
+        digital projects, and event management. I am seeking an internship starting in
+        <strong>April 2026</strong>
+        to develop my professional skills in digital communication and project coordination.
+      </p>
+    </div>
 
-    <h2>Contact</h2>
-    <p>📞 +33 6 68 46 45 77</p>
-    <p>✉️ syedsakeena.2001@gmail.com</p>
-    <p>📍 Paris, France</p>
+    <div class="contact_details_content">
+      <h2>Contact Details</h2>
+      <p class="purple">Phone:</p>
+      <p>+33 6 68 46 45 77</p>
+      <p class="purple">Email:</p>
+      <p>syedsakeena.2001@gmail.com</p>
+      <p class="purple">Location:</p>
+      <p>Paris, France</p>
+      <p>Driving License: B</p>
+    </div>
 
-    <h2 id="education">Education</h2>
-    <p><strong>Master Digital Humanities</strong><br>Université Paris 8</p>
+    <div class="get_social_content">
+      <h2>Languages</h2>
+      <ul>
+        <li><strong>French:</strong> C1 (Professional)</li>
+        <li><strong>English:</strong> B1 (Independent)</li>
+        <li><strong>Spanish:</strong> B1 (Independent)</li>
+        <li><strong>Urdu:</strong> C2 (Native)</li>
+        <li><strong>Hindi:</strong> C1</li>
+        <li><strong>Punjabi:</strong> C1</li>
+      </ul>
+    </div>
 
-    <h2 id="interest">Interests</h2>
-    <ul>
-      <li>Photography</li>
-      <li>Travel</li>
-      <li>Volunteering</li>
-    </ul>
+    <div class="contact_details_content" id="education">
+      <h2>Education</h2>
+      <p><strong>Master’s in Digital Humanities: Issues and Technology</strong><br>
+        Université Paris 8 | 2025–2027 (in progress)</p>
+      <p><strong>Bachelor’s in Humanities and Social Sciences</strong><br>
+        Université Paris Cité | 2020–2024</p>
+      <p><strong>PSC1 Certificate</strong> – Civic First Aid Skills | 2019</p>
+    </div>
+
+    <div class="get_social_content" id="interest">
+      <h2>Interests</h2>
+      <ul>
+        <li>Photography: photo creation and editing</li>
+        <li>Travel and cultural exploration</li>
+        <li>Volunteering: election monitoring, charity runs, and humanitarian aid in Pakistan</li>
+      </ul>
+    </div>
+
   </div>
 
   <!-- MAIN CONTENT -->
-  <div id="content_container">
-    <div class="block" id="experience">
+  <div id="content_container" id="experience">
+
+    <div class="block">
       <h1>Professional Experience</h1>
-      <h2>Event Project Assistant</h2>
-      <p>J.D.M | 2024</p>
+
+      <h2>Event Project Assistant (Fixed-term contract)</h2>
+      <p><strong>J.D.M | Saint Genis-Pouilly | Jul 2024 – Oct 2024</strong></p>
+      <ul>
+        <li>Coordinated event planning and logistics (suppliers, participants).</li>
+        <li>Contributed to communication strategy and Instagram content creation.</li>
+        <li>Assessed event impact and prepared analytical reports.</li>
+      </ul>
+
+      <h2>Event Project Assistant (Internship)</h2>
+      <p><strong>J.D.M | Saint Genis-Pouilly | Feb 2024 – Jun 2024</strong></p>
+      <ul>
+        <li>Supported the organization and coordination of professional events.</li>
+        <li>Assisted in developing communication materials and managing event schedules.</li>
+      </ul>
+
+      <h2>Independent Event Organizer</h2>
+      <p><strong>Freelance | Paris | Oct 2023 – Feb 2024</strong></p>
+      <ul>
+        <li>Planned and coordinated private events (weddings, birthdays).</li>
+        <li>Managed logistics, supplier relations, and client satisfaction.</li>
+        <li>Created personalized event concepts and supervised on-site execution.</li>
+      </ul>
+
+      <h2>Legal Project Intern</h2>
+      <p><strong>Privanova | Paris | Sep 2023 – Nov 2023</strong></p>
+      <ul>
+        <li>Participated in projects focused on law enforcement and privacy ethics.</li>
+        <li>Conducted interdisciplinary research and contributed to project management.</li>
+      </ul>
     </div>
 
     <div class="horizontal_line">
@@ -269,17 +393,39 @@
 
     <div class="block" id="skills">
       <h2>Skills</h2>
+
+      <h3>Hard Skills</h3>
       <ul>
-        <li>Event organization</li>
-        <li>Social media</li>
-        <li>Communication</li>
+        <li>Event planning and organization</li>
+        <li>Social media content strategy</li>
+        <li>Quantitative and qualitative data analysis</li>
+        <li>Research and market trend evaluation</li>
+        <li>Relational communication</li>
+      </ul>
+
+      <h3>Soft Skills</h3>
+      <ul>
+        <li>Ability to adapt to multicultural environments</li>
+        <li>Teamwork</li>
+        <li>Organization and adaptability</li>
+        <li>Reliability and punctuality</li>
+      </ul>
+
+      <h3>Digital Skills</h3>
+      <ul>
+        <li>Modaalisa</li>
+        <li>Canva, Adobe Illustrator / Photoshop</li>
+        <li>Social media management</li>
       </ul>
     </div>
+
   </div>
+
+  <div class="clear"></div>
 
   <!-- FOOTER -->
   <div id="footer">
-    <p>Sakeena Syed Naqvi – CV 2025</p>
+    <p class="footer_name">Sakeena Syed Naqvi – CV 2025</p>
   </div>
 
 </div>
